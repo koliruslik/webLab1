@@ -22,7 +22,8 @@ a:visited {
 
 table {
     width: 100%;
-    height: 100%;
+    height: auto;
+    table-layout: auto;
     text-align: center;
 }
 
@@ -30,6 +31,13 @@ table, th, td {
     border: 1px solid #444444;
     color: #e0e0e0;
     font-size: 34px;
+}
+th, td {
+    max-width: 350px;       
+    hyphens: auto;
+    overflow-wrap: break-word;
+    white-space: normal;
+    padding: 8px;
 }
 
 table tr:hover {
@@ -67,7 +75,7 @@ table tr:hover {
 .block3 { 
     grid-column: 2 / 3;
     grid-row: 2 / 3;  
-    display: grid; 
+    display: block; 
     place-items: stretch; 
     background: #181818;
     color: #ffffff;
