@@ -4,8 +4,9 @@
 }
 body {
     background-color: #121212;
-    color: #e0e0e0
+    color: #e0e0e0;
 }
+
 a {
     color: #08c5de;
     text-decoration: none;
@@ -33,8 +34,6 @@ table, th, td {
     font-size: 34px;
 }
 th, td {
-    max-width: 350px;       
-    hyphens: auto;
     overflow-wrap: break-word;
     white-space: normal;
     padding: 8px;
@@ -50,8 +49,7 @@ table tr:hover {
     grid-template-rows:auto 1fr auto auto;
     gap: 5px;
     min-height: 100vh;
-    width: calc(100vw - padding);
-    
+    width: 100%;
 }
 
 .block1 { 
@@ -106,6 +104,9 @@ table tr:hover {
     padding-right: 5px;
 }
 
+.block2, .block4, .block5 {
+    word-break: break-word;  
+}
 
 img {
     vertical-align: middle;
